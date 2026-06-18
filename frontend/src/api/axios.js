@@ -3,7 +3,9 @@ import { getToken, removeToken } from '../utils/token';
 
 // Create reusable Axios instance
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api',
+  baseURL: import.meta.env.PROD
+    ? 'https://messdekho-axbg.onrender.com/api'
+    : (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api'),
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json'
