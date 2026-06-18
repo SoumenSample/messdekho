@@ -33,7 +33,7 @@ app.use(express.json());
 // ============================================
 // CORS CONFIGURATION
 // ============================================
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'http://localhost:5176', 'https://messdekho-pi.vercel.app'];
+const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'http://localhost:5176', 'https://messdekho-pi.vercel.app','https://www.messdekho.me/'];
 app.use(cors({
   origin: (origin, callback) => {
     if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV === 'production') {
