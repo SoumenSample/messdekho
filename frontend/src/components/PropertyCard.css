@@ -1,0 +1,219 @@
+.property-card {
+  width: 100%;
+  font-family: "Circular", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  cursor: pointer;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-2px);
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #e0e0e0;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card-image-wrapper:hover .card-image {
+  transform: scale(1.03);
+}
+
+.heart-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.heart-icon {
+  width: 28px;
+  height: 28px;
+  fill: rgba(255, 255, 255, 0.3);
+  stroke: #ffffff;
+  stroke-width: 2;
+  transition: fill 0.2s ease, transform 0.2s ease;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
+}
+
+.heart-btn.liked .heart-icon {
+  fill: #ff385c;
+  stroke: #ff385c;
+  transform: scale(1.1);
+}
+
+.heart-btn:hover .heart-icon {
+  transform: scale(1.15);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: #222222;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.card-image-wrapper:hover .nav-btn {
+  opacity: 1;
+}
+
+.nav-prev {
+  left: 10px;
+}
+
+.nav-next {
+  right: 10px;
+}
+
+.nav-btn:hover {
+  background: #f7f7f7;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.dot-row {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 2;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.dot.active {
+  background: #ffffff;
+  transform: scale(1.2);
+}
+
+.guest-favourite-pill {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 2;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #0f8a5f;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.card-info {
+  padding: 12px 0 0;
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card-location {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 1.3;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+  white-space: nowrap;
+}
+
+.star-icon {
+  fill: #222222;
+}
+
+.card-title {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #717171;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-meta {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #717171;
+  font-weight: 400;
+}
+
+.card-price {
+  margin: 8px 0 0;
+  font-size: 15px;
+  color: #222222;
+}
+
+.price-amount {
+  font-weight: 600;
+}
+
+.price-nights {
+  font-weight: 400;
+  color: #222222;
+}
+
+.free-cancel {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #4b5563;
+}

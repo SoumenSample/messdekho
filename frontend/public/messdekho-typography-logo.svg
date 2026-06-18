@@ -1,0 +1,21 @@
+<svg width="640" height="220" viewBox="0 0 640 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MessDekho</title>
+  <desc id="desc">Premium typography logo for MessDekho with green to orange gradient</desc>
+  <defs>
+    <linearGradient id="grad" x1="40" y1="50" x2="600" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#11A56A"/>
+      <stop offset="45%" stop-color="#6CAD55"/>
+      <stop offset="72%" stop-color="#F0B055"/>
+      <stop offset="100%" stop-color="#F39B4B"/>
+    </linearGradient>
+    <linearGradient id="underline" x1="120" y1="165" x2="560" y2="165" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#16A36C"/>
+      <stop offset="100%" stop-color="#F39B4B"/>
+    </linearGradient>
+  </defs>
+  <path d="M132 150C145 113 151 84 154 67C162 69 169 75 175 85C182 99 186 123 188 156C188 163 191 167 195 167C199 167 202 164 205 158C209 148 213 129 219 103C226 73 232 56 236 53C240 50 246 53 252 64C259 77 264 96 266 119C268 140 269 154 271 161C273 168 277 171 282 171C287 171 291 168 295 162C300 154 305 143 310 129C317 108 324 92 330 81C337 69 344 61 350 59C356 57 362 61 368 70C374 79 380 93 386 112C393 134 399 149 404 158C409 166 415 170 421 170C427 170 434 166 441 157C448 147 456 133 464 115C473 95 482 80 491 71C500 62 509 58 518 60C527 62 533 68 537 77C541 86 544 102 545 125C546 148 551 164 559 170C563 173 569 173 576 170" fill="none" stroke="url(#underline)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(52 33) skewX(-10)">
+    <text x="0" y="112" font-family="cursive, 'Brush Script MT', 'Segoe Script', 'Snell Roundhand', serif" font-size="128" font-weight="700" letter-spacing="-3" fill="url(#grad)">Mess</text>
+    <text x="250" y="112" font-family="cursive, 'Brush Script MT', 'Segoe Script', 'Snell Roundhand', serif" font-size="128" font-weight="700" letter-spacing="-3" fill="url(#grad)">Dekho</text>
+  </g>
+</svg>

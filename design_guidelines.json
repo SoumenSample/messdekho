@@ -1,0 +1,147 @@
+{
+  "theme": "Light",
+  "archetype": "1 (Organic & Earthy)",
+  "colors": {
+    "brand_primary": {
+      "description": "Deep Emerald - the core brand color representing freshness and trust.",
+      "hex": "#047857",
+      "tailwind": "emerald-700"
+    },
+    "brand_secondary": {
+      "description": "Warm Terracotta - for high-contrast accents and secondary CTAs.",
+      "hex": "#C2410C",
+      "tailwind": "orange-700"
+    },
+    "background_base": {
+      "description": "Bone White - the overarching background color to avoid clinical white.",
+      "hex": "#F9FAFB",
+      "tailwind": "gray-50"
+    },
+    "surface": {
+      "description": "Pure white for cards and floating elements.",
+      "hex": "#FFFFFF",
+      "tailwind": "white"
+    },
+    "surface_muted": {
+      "description": "Muted green-tinted background for active states or subtle sections.",
+      "hex": "#ECFDF5",
+      "tailwind": "emerald-50"
+    },
+    "text_primary": {
+      "description": "Deep Charcoal for readable headings and body text.",
+      "hex": "#1F2937",
+      "tailwind": "gray-800"
+    },
+    "text_muted": {
+      "description": "Soft Gray for secondary info and placeholders.",
+      "hex": "#6B7280",
+      "tailwind": "gray-500"
+    },
+    "borders": {
+      "description": "Subtle, slightly warm gray borders.",
+      "hex": "#E5E7EB",
+      "tailwind": "gray-200"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "'Cabinet Grotesk', sans-serif",
+        "description": "Distinctive, authoritative but fresh sans-serif. Load via Fontshare or use 'Outfit' via Google Fonts as fallback."
+      },
+      "body": {
+        "family": "'Manrope', sans-serif",
+        "description": "Clean, modern, and highly legible for long-form data and dashboards."
+      }
+    },
+    "scales": {
+      "h1": "text-5xl lg:text-6xl tracking-tight font-bold text-gray-900",
+      "h2": "text-3xl lg:text-4xl tracking-tight font-bold text-gray-900",
+      "h3": "text-2xl lg:text-3xl tracking-tight font-semibold text-gray-800",
+      "h4": "text-xl font-semibold text-gray-800",
+      "body": "text-base leading-relaxed text-gray-600",
+      "small": "text-sm text-gray-500",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-emerald-700"
+    }
+  },
+  "spacing_and_layout": {
+    "grid_strategy": {
+      "marketing": "Mode A: The Bento Grid (asymmetrical, wide gaps gap-8). Use for Home and PG Listing.",
+      "dashboard": "Mode B: Control Room Grid (dense, grid-cols-4, tight gaps gap-6). Use for Admin/Owner panels."
+    },
+    "padding": "Generous. Cards must use p-6 or p-8. Sections use py-24.",
+    "border_radius": "Rounded-2xl for main cards, rounded-xl for inputs, rounded-full for buttons and badges.",
+    "shadows": "Ambient diffuse shadows: shadow-[0_8px_30px_rgba(4,120,87,0.06)] for default, shadow-[0_20px_40px_rgba(4,120,87,0.12)] for hover states."
+  },
+  "components": {
+    "navbar": "Glassmorphism: backdrop-blur-xl bg-white/70 border-b border-gray-200. Must be sticky at top.",
+    "buttons": "Primary: bg-emerald-700 text-white hover:bg-emerald-800 transition-all rounded-full px-6 py-2. Secondary: border border-emerald-200 text-emerald-800 hover:bg-emerald-50.",
+    "cards": "bg-white border border-gray-100 rounded-2xl shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300.",
+    "inputs": "Shadcn defaults modified to rounded-xl, focus:ring-2 focus:ring-emerald-500/50, solid white bg.",
+    "badges": "Soft background. Available: bg-emerald-50 text-emerald-700. Full/Booked: bg-orange-50 text-orange-700."
+  },
+  "iconography": {
+    "library": "lucide-react",
+    "usage": "Use stroke-width 2. Keep sizing consistent (w-5 h-5 for inline, w-8 h-8 for feature callouts)."
+  },
+  "animation": {
+    "library": "framer-motion",
+    "interactions": "Hover states on all interactive elements. Page load staggers for lists (e.g., PG listings). No heavy 3D, keep it snappy and UI-focused."
+  },
+  "images": {
+    "hero_building": {
+      "url": "https://images.unsplash.com/photo-1617341623760-1919df79274c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDB8fHx8MTc3NjYyODQ0Mnww&ixlib=rb-4.1.0&q=85",
+      "description": "Modern apartment building exterior. Use as the hero section background or featured image."
+    },
+    "pg_room_1": {
+      "url": "https://images.pexels.com/photos/5137982/pexels-photo-5137982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Cozy hostel room with bunk beds. Use in PG Listing cards."
+    },
+    "pg_room_2": {
+      "url": "https://images.pexels.com/photos/35165103/pexels-photo-35165103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Warmly lit dorm room. Use in PG Details image gallery."
+    },
+    "pg_room_3": {
+      "url": "https://images.pexels.com/photos/8089071/pexels-photo-8089071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Bright minimal bedroom for single-room PGs."
+    },
+    "mess_food_1": {
+      "url": "https://images.pexels.com/photos/5775684/pexels-photo-5775684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Delicious Indian thali. Showcasing mess food quality on Home or PG Details."
+    },
+    "mess_food_2": {
+      "url": "https://images.pexels.com/photos/17223838/pexels-photo-17223838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Traditional thali top view. Use in Mess Menu sections."
+    },
+    "students": {
+      "url": "https://images.pexels.com/photos/6684600/pexels-photo-6684600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Group of diverse students. Great for 'About Us', 'Testimonials', or Auth page split-screen."
+    },
+    "avatar_user": {
+      "url": "https://images.pexels.com/photos/31868218/pexels-photo-31868218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Smiling young woman. Use as dummy avatar for the user profile."
+    }
+  },
+  "pages": {
+    "home": "Hero section with a bold heading, an elevated floating search bar (Location, Price, Type), followed by a bento-grid of 'Featured Properties'. Use generative spacing.",
+    "pg_listing": "Left sidebar for filters (budget, amenities, sharing type). Right side is a responsive grid of PG Cards. Each card has an image carousel (if possible) or single image, title, location, price, and 'View Details' button.",
+    "pg_details": "Top: Asymmetrical image bento grid (1 large, 2 small stacked). Below: Two-column layout (content 70%, sticky booking card 30%). Content includes Tabs for Overview, Amenities, Mess Menu, Reviews.",
+    "auth": "Login/Signup. Split-screen layout: left side is a clean, minimal Shadcn form, right side is the 'students' image with a soft emerald gradient overlay. Use mock auth saving role to localStorage.",
+    "my_bookings": "List view or dense card view of user's bookings. Show Status Badge (Pending, Confirmed, Cancelled).",
+    "owner_dashboard": "Sidebar navigation. Main area uses Control Room Grid. Top row: Stat cards (Total PGs, Active Tenants). Below: Recent booking requests.",
+    "owner_add_pg": "Clean scrolling form using Shadcn. Sections for Basic Details, Pricing, Amenities (checkboxes), and Image Upload placeholder UI.",
+    "owner_bookings": "Data table of incoming bookings using Shadcn Table. Actions: Approve / Reject.",
+    "admin_dashboard": "Similar to Owner Dashboard but wider scope. Tables for 'Pending PG Approvals' and 'All Users'. Strict, clean, data-dense design."
+  },
+  "testing": {
+    "attributes": "All interactive elements MUST have a data-testid attribute in kebab-case (e.g., data-testid='login-submit-button', data-testid='pg-card-book-btn')."
+  },
+  "instructions_to_main_agent": [
+    "Project is React + Vite + Tailwind + Shadcn UI. Use .jsx/.js files, NO TypeScript.",
+    "Do NOT use 'Inter' for headings. Configure 'Cabinet Grotesk' or 'Outfit' for headings in tailwind.config.js.",
+    "Implement Shadcn UI for structured components (Forms, Tables, Dialogs) but heavily customize them to remove the 'Vercel look' - make them rounder, softer, and tint borders with emerald.",
+    "Use pure HTML/Tailwind for marketing layouts (Home hero, bento grids). Do not use Shadcn 'Card' for complex bento layouts, use raw divs.",
+    "All data must be mock data stored in localStorage or hardcoded state. Implement a dummy Auth context that toggles between User/Owner/Admin roles.",
+    "Never use placeholder image services. ONLY use the provided Unsplash/Pexels URLs in this JSON."
+  ]
+}
