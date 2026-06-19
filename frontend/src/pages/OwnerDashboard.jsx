@@ -207,12 +207,12 @@ export default function OwnerDashboard() {
           <h2 className="font-heading text-xl font-semibold text-gray-900">Your PG listings</h2>
           <p className="mt-1 text-sm text-gray-500">Review listings, track approval status, and manage updates.</p>
         </div>
-        <a
+        {/* <a
           href="/owner/add"
           className="inline-flex items-center gap-2 rounded-full bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-800"
         >
           <Plus className="h-4 w-4" /> Add PG
-        </a>
+        </a> */}
       </div>
       
       {loadingPGs ? (
